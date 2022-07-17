@@ -3,9 +3,9 @@ package main
 import (
 	"net/http"
 
-	"github.com/vaport05/gql"
+	"github.com/vapor05/gql/pkg/graphql"
 )
 
 func main() {
-	http.HandleFunc("/query", gql.GqlHandler)
+	http.HandleFunc("/query", graphql.GqlHandler)
 }
