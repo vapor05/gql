@@ -8,4 +8,5 @@ import (
 
 func main() {
 	http.HandleFunc("/query", graphql.GqlHandler)
+	http.ListenAndServe(":3005", nil)
 }
